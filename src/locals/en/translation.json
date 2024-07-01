@@ -1,0 +1,45 @@
+{
+  "navbar": {
+    "shop": "Our shop",
+    "about": "About",
+    "contact": "Contact",
+    "news": "News"
+  },
+  "slider": {
+    "slide1": {
+      "title": "Welcome to Our Website",
+      "text": "Discover our services",
+      "button": "Learn More"
+    },
+    "slide2": {
+      "title": "Explore Our Products",
+      "text": "Find what you need",
+      "button": "Shop Now"
+    },
+    "slide3": {
+      "title": "Join Our Community",
+      "text": "Connect with like-minded people",
+      "button": "Join Us"
+    },
+    "slide4": {
+      "title": "Unique Experience",
+      "text": "Enjoy the latest products",
+      "button": "Explore"
+    },
+    "slide5": {
+      "title": "Superior Customer Service",
+      "text": "We are here to serve you with satisfaction",
+      "button": "Contact Us"
+    },
+    "slide6": {
+      "title": "Fast Delivery",
+      "text": "Quick and efficient delivery for all orders",
+      "button": "Shop Now"
+    }
+  },
+  "Header": {
+    "title": "Be Creative!",
+    "btn": "Explore More"
+  },
+  "ourShop": "our shop"
+}

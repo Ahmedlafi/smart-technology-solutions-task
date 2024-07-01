@@ -1,0 +1,160 @@
+
+body {
+    font-family: 'Readex Pro', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover; /* Changed from contain to cover for better responsiveness */
+    height: 572px;
+    background-image: url("../assets/cover.png");
+    text-align: center; /* Center text for better mobile view */
+  }
+  
+  .header-text {
+    margin: auto;
+  }
+  
+  .header_title {
+    font-size: 36px; /* Reduced font size for better mobile view */
+    font-weight: bold;
+  }
+  
+  .header_main_btn {
+    background-color: #FFB870;
+  }
+  
+  /* Button styles */
+  .btn {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .btn-txt {
+    z-index: 1;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: large;
+  }
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #333;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .btn:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #ffffff;
+    border: none;
+    font-size: larger;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border-bottom: solid 1px #fff;
+  }
+  
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .navbar-links.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  .localization-btn {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  /* Media queries for responsive design */
+  @media (min-width: 768px) {
+    .navbar {
+      margin: 40px 35px 0 35px;
+      padding: 20px 15px;
+      width: 94%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    }
+  
+    .navbar-links {
+      flex-direction: row;
+      gap: 60px;
+      margin-top: 0;
+    }
+  
+    .header_title {
+      font-size: 48px; /* Increase font size for larger screens */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .header {
+      height: auto; /* Adjust height for better mobile view */
+      padding: 20px;
+    }
+  
+    .header_title {
+      font-size: 24px; /* Further reduce font size for small screens */
+    }
+  
+    .header_main_btn {
+      width: 180px; /* Adjust button width for small screens */
+      background-color: #FFB870;
+    }
+  
+    .btn {
+      width: 180px; /* Adjust button width for small screens */
+    }
+  }

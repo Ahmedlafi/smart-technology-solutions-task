@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;700&display=swap');
+
+body {
+  font-family: 'Readex Pro', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px; /* Adjust padding for top and bottom */
+  border-bottom: solid 1px #fff;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column; /* Stack links vertically on small screens */
+  gap: 20px; /* Space between links */
+  list-style: none;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  margin-top: 20px; /* Adjust margin between navbar and links */
+}
+
+.navbar-links.hide {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.localization-btn {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    margin: 40px 35px 0 35px; /* Larger margin for desktop */
+    padding: 20px 15px; /* Adjust padding */
+  }
+
+  .navbar-links {
+    flex-direction: row; /* Align links horizontally on larger screens */
+    gap: 60px; /* Restore gap between links */
+    margin-top: 0; /* Reset top margin */
+  }
+}
